@@ -38,7 +38,7 @@ app.post('/upload', upload.array('files'), (req, res) => {
       credentials: true, // Optional: if you need to include cookies
   }));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/yourdb', {
+mongoose.connect('mongodb+srv://starx91:Starx9119@starx91.ol9uz.mongodb.net/Starx?retryWrites=true&w=majority&appName=starx91', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
